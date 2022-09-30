@@ -1,0 +1,88 @@
+﻿@model CustomerRegistration.Models.Customer
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustFatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustFatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustPhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustPhoneNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryShortCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryShortCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedRegionCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedRegionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
