@@ -1,0 +1,4 @@
+This Project is about to save and delete customers information.In this project to populate country list i use CountryData.Standard. 
+I also used jquery to populate the region dropdown list on the based of country short code.
+To create this project i used Visual Studio 2022 ,Razor View mvc5
+
